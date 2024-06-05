@@ -76,9 +76,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="test_HPC1" class="md-header__button md-logo" aria-label="test_HPC1" data-md-component="logo">
       
@@ -171,6 +169,86 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../mkdocs-material/" class="md-tabs__link">
+        
+  
+    
+  
+  Test
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Mkdocs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../update/" class="md-tabs__link">
+        
+  
+    
+  
+  Update
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../about/" class="md-tabs__link">
+          
+  
+  Some
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -184,8 +262,10 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="test_HPC1" class="md-nav__button md-logo" aria-label="test_HPC1" data-md-component="logo">
       
@@ -333,12 +413,17 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -389,12 +474,17 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
         
           
           <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
@@ -533,6 +623,19 @@
 <p><code>md</code>文件中的内容，就算使用了 <code>mkdocs gh-deploy --force</code>也还是不会出现，需要在网页手动的刷新，我真的会shit</p>
 <p>而且上传到github的内容，好像是 <code>/site/</code>这个文件夹下的内容</p>
 <p>是否需要本地的git中添加 <code>.gitignore</code>这样能够同步我的内容吗，而且上传信息的人是我的qq邮箱</p>
+<p>收获一个小功能：
+<img alt="1717603907008" src="../image/mkdocs_learnning/1717603907008.png" /></p>
+<p>一些感想：</p>
+<ol>
+<li>其实使用 <code>mkdocs gh-deploy</code>的频率没有那么高，一般是在 <code>vscode</code>中编辑docs下面的md文档，使用 <code>mkdocs serve</code>起一个浏览器的页面，最好还是分屏，可以一个屏幕编写代码，一个屏幕显示内容，也是一种所见即所得，人其实分辨不出来渲染时间的差异。</li>
+<li>
+<p>目前我还是在两边编写内容</p>
+<p><img alt="1717604268135" src="../image/mkdocs_learnning/1717604268135.png" /></p>
+</li>
+<li>
+<p>之后的事情就再说吧。希望我能写的图文并茂、详略得当、结构清晰。</p>
+</li>
+</ol>
 
 
 
@@ -579,7 +682,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.path", "navigation.tabs"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
